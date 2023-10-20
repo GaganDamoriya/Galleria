@@ -5,11 +5,12 @@ body {
   --bg-clr: black;
   --heading: rgb(61, 93, 234);
   --txt-clr: white;
-  --sec-body: black;
+  --img-div: rgb(49 48 48);
 }
 .light-theme {
   --bg-clr: white;
   --txt-clr: black;
+  --img-div: rgb(192 192 192);
 }
 
 nav {

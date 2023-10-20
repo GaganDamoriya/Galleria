@@ -25,18 +25,27 @@
 .closenav {
   display: flex;
   justify-content: end;
-  background-color: rgb(83, 83, 83);
+  background-color: var(--img-div);
 }
 .inner {
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+.closeBtn {
+  background: none;
+  font-size: 1rem;
+  border: none;
+  color: blue;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
 .imgdiv {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgb(83, 83, 83);
+  background-color: var(--img-div);
 }
 .imgdiv img {
   max-height: 500px;

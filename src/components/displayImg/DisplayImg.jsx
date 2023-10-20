@@ -14,9 +14,8 @@ const DisplayImg = ({ photoid, onClose }) => {
       <div className="imageContent">
         <div className="inner">
           <div className="closenav">
-            <span>close</span>
             <button className="closeBtn" onClick={onClose}>
-              x
+              close
             </button>
           </div>
           <div className="imgdiv">
