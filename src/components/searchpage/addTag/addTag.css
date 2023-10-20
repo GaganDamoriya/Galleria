@@ -1,0 +1,17 @@
+.tagsDiv {
+  display: flex;
+  gap: 20px;
+}
+.tag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1.2px solid blue;
+  padding: 5px 15px;
+  border-radius: 15px;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+}

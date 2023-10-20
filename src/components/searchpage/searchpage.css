@@ -1,0 +1,15 @@
+.search-page {
+  display: flex;
+  flex-direction: column;
+}
+.pageess {
+  margin: 40px auto;
+  display: flex;
+  justify-content: center;
+
+  width: 70%;
+}
+.displaysearch_pages {
+  display: flex;
+  flex-direction: column;
+}

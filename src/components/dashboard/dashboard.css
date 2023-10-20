@@ -1,0 +1,30 @@
+.dashDiv {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.spinner {
+  height: 90.1vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.herodiv {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.herodiv h1 {
+  font-size: 2.5em;
+  color: aliceblue;
+}
+
+.imageclts {
+  display: flex;
+  flex-direction: column;
+}

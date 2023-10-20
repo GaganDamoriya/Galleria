@@ -1,0 +1,29 @@
+body {
+  margin: 0;
+}
+.dark-theme {
+  --bg-clr: black;
+  --heading: rgb(61, 93, 234);
+  --txt-clr: white;
+  --sec-body: black;
+}
+.light-theme {
+  --bg-clr: white;
+  --txt-clr: black;
+}
+
+nav {
+  background-color: var(--bg-clr);
+  color: var(--txt-clr);
+}
+li {
+  color: var(--txt-clr);
+}
+h1 {
+  color: var(--heading);
+  font-family: "Young Serif";
+}
+div {
+  background-color: var(--bg-clr);
+  color: var(--txt-clr);
+}
