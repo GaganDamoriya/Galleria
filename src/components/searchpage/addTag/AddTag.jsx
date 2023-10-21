@@ -8,7 +8,7 @@ const AddTag = ({ data }) => {
       return item.tags.map((tag) => tag.title);
     })
   );
-  console.log(newData);
+
   const first10Tags = Array.from(newData).slice(0, 10);
   return (
     <div className="tagsDiv">

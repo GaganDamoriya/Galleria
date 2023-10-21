@@ -7,7 +7,7 @@ import OpenHD from "./openHD/OpenHD";
 
 const DisplayImg = ({ photoid, onClose }) => {
   const [openinHD, setOpeninHD] = useState(false);
-  console.log(photoid);
+
   return (
     <div className="disImg">
       <div className="opacity_layer" onClick={onClose}></div>
