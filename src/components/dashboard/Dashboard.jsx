@@ -5,14 +5,17 @@ import mountain from "../../assets/mountaincpoy1.jpg";
 import ImageCollection from "./imageCollection/ImageCollection";
 import { SpinnerCircular } from "spinners-react";
 import Searchbar from "../searchbar/Searchbar";
+import Pagination from "../pagination/Pagination";
 
 const Dashboard = () => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
+    setLoading(true);
     fetch(
-      `https://api.unsplash.com/photos/?client_id=nxqsfFYnW7Kmx88PonlFI9AQCUpeHyVyzPrb85RlK-Q&per_page=30&page=1`
+      `https://api.unsplash.com/photos/?client_id=nxqsfFYnW7Kmx88PonlFI9AQCUpeHyVyzPrb85RlK-Q&per_page=30&page=${currentPage}`
     )
       .then((response) => response.json())
       .then((Responsedata) => {
@@ -20,8 +23,8 @@ const Dashboard = () => {
         setLoading(false);
       })
       .catch((error) => console.error(error));
-  }, []);
-  console.log(data);
+  }, [currentPage]);
+
   return (
     <div className="dashDiv">
       {loading ? (
@@ -52,6 +55,13 @@ const Dashboard = () => {
             <h1>Image Collections</h1>
             <div>
               <ImageCollection data={data} />
+            </div>
+            <div className="pageess">
+              <Pagination
+                currentPage={currentPage}
+                totalPages={99}
+                onPageChange={setCurrentPage}
+              />
             </div>
           </div>
         </Bodywrapper>

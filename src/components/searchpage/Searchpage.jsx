@@ -32,7 +32,6 @@ const Searchpage = () => {
       .catch((error) => console.error("Error:", error));
   }, [currentPage, query]);
 
-  console.log(currentPage);
   return (
     <div className="search-page">
       {loading ? (
