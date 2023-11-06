@@ -9,9 +9,11 @@ import AddTag from "./addTag/AddTag";
 
 const Searchpage = () => {
   const { query } = useParams();
-  const [currentPage, setCurrentPage] = useState(1);
-  const [searchData, setSearchData] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1); // storing the current index of page
+  const [searchData, setSearchData] = useState([]); //query data
   const [loading, setLoading] = useState(true);
+
+  //fetching the searched query and storing in data searchData
 
   useEffect(() => {
     setLoading(true);

@@ -6,6 +6,7 @@ const ImageCollection = ({ data }) => {
   const [show, setShow] = useState(false);
   const [photoid, setphotoid] = useState(null);
 
+  //popup img
   const handleImageClick = (index) => {
     setphotoid(index);
     setShow(true);

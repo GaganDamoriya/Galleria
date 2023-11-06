@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./addTag.css";
 const AddTag = ({ data }) => {
   const navigate = useNavigate();
+
+  //finding unique tags from tag:[{},{},..]
+
   let newData = new Set(
     data.flatMap((item) => {
       return item.tags.map((tag) => tag.title);

@@ -10,6 +10,8 @@ const DisplayImg = ({ photoid, onClose }) => {
 
   return (
     <div className="disImg">
+      {/* opacity layer pop up onclick close background */}
+
       <div className="opacity_layer" onClick={onClose}></div>
       <div className="imageContent">
         <div className="inner">

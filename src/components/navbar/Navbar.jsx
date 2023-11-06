@@ -12,12 +12,14 @@ const Navbar = () => {
   const [theme, setTheme] = useState("light-theme");
   const [mobileMenuOn, setMobileMenuOn] = useState("navLinks");
 
+  //toggle mobile menu
   const mobileMenu = () => {
     mobileMenuOn === "navLinks"
       ? setMobileMenuOn("navLinks nav_active")
       : setMobileMenuOn("navLinks");
   };
 
+  //toggle light and dark theme
   const handletheme = () => {
     setChecked((prevChecked) => !prevChecked);
     theme === "light-theme" ? setTheme("dark-theme") : setTheme("light-theme");
@@ -41,7 +43,6 @@ const Navbar = () => {
             <li>Collection</li>
             <li>Community</li>
           </ul>
-
           <div className="darkMode">
             <span>{theme === "light-theme" ? "Dark mode" : "Light mode"}</span>
             <input

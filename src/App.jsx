@@ -11,7 +11,9 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes>
+          {/* landing page */}
           <Route path="/" element={<Dashboard />} />
+          {/* search page route */}
           <Route path="search/:query" element={<Searchpage />} />
         </Routes>
         <Footer />

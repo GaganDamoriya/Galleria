@@ -3,6 +3,8 @@ import "./openHD.css";
 
 const OpenHD = ({ closeHD, imgUrl }) => {
   console.log(imgUrl);
+  //closeHD close function
+  //imgUrl url of image
   return (
     <div className="openImg" onClick={closeHD}>
       <div className="imghere">

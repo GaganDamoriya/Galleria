@@ -6,6 +6,9 @@ import { useNavigate } from "react-router-dom";
 const Searchbar = () => {
   const [input, setInput] = useState("");
   const navigate = useNavigate();
+
+  //search query navigate to seachpage  ......
+
   const searchquery = (event) => {
     if (event.key === "Enter" && input.length > 0) {
       navigate(`/search/${input}`);
