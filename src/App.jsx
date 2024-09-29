@@ -14,6 +14,7 @@ function App() {
           {/* landing page */}
           <Route path="/" element={<Dashboard />} />
           {/* search page route */}
+          {/* check how are you */}
           <Route path="search/:query" element={<Searchpage />} />
         </Routes>
         <Footer />
